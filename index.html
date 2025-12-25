@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Max Verstappen | F1 Champion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+<nav id="navbar">
+  <h2>MAX VERSTAPPEN</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#timeline">Career</a></li>
+    <li><a href="#stats">Stats</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Fans</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Max Verstappen</h1>
+    <p>Formula 1 World Champion | Red Bull Racing</p>
+
+    <div class="counters">
+      <div>
+        <span id="wins">0</span>
+        <p>Race Wins</p>
+      </div>
+      <div>
+        <span id="titles">0</span>
+        <p>World Titles</p>
+      </div>
+      <div>
+        <span id="poles">0</span>
+        <p>Pole Positions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>Career Timeline</h2>
+
+  <div class="timeline-item">
+    <h3>2015 – F1 Debut</h3>
+    <p>Youngest driver to start a Formula 1 race (Toro Rosso)</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>2016 – First Win</h3>
+    <p>Won Spanish Grand Prix on debut for Red Bull Racing</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>2021 – First World Championship</h3>
+    <p>Won dramatic Abu Dhabi GP to secure first title</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>2022 & 2023 – Dominance</h3>
+    <p>Back-to-back championships with record-breaking seasons</p>
+  </div>
+</section>
+
+<section id="stats">
+  <h2>Stats & Achievements</h2>
+  <canvas id="statsChart"></canvas>
+</section>
+
+<section id="gallery">
+  <h2>Media Gallery</h2>
+  <div class="gallery-grid">
+    <img src="assets/images/verstappen1.jpg" onclick="openModal(this.src)">
+    <img src="assets/images/verstappen2.jpg" onclick="openModal(this.src)">
+    <img src="assets/images/verstappen3.jpg" onclick="openModal(this.src)">
+  </div>
+</section>
+
+<div id="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
+<section id="contact">
+  <h2>Message from Fans</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <textarea placeholder="Your Message for Max"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://twitter.com/Max33Verstappen" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/maxverstappen1/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
